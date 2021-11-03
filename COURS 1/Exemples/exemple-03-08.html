@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>3 novembre - Exemple 8</title>
+    <script>
+        // Tableaux (Array en anglais)
+            var prenoms = ['Pierre','Paul','Sophie','Julie','Denis','Lise'];
+            // Pour afficher un contenu d'un tableau, il faut indiquer l'indice. Attention, la première valeur est zéro. Ici, les indices du tableau contenu dans la variable  prenoms vont de 0 à 5
+            alert(prenoms[2]); // affiche Sophie
+            alert(prenoms[0]); // affiche Pierre
+
+
+            // Pour ajouter un contenu en plus des éléments déjà présents, il faut indiquer un nouvel indice :
+            prenoms[6] = 'Brigitte';
+
+            // Pour modifier un indice d'un tableau :
+            prenoms[0] = 'France';
+
+            // Un tableau peut contenir un ou plusieurs tableaux
+            var elements = ['coucou',[14,67,'autre'],778.5,[-13,'148','divers'],'fin'];
+            alert(elements[1][2]); // affiche autre
+            alert(elements[3][0]); // affiche -13
+
+            elements[1][3] = 'une suite'; // ajouter un indice dans le tableau placé à l'indice 1 du tableau de base
+            elements[3][1] = 65; // remplace '148'
+    </script>
+</head>
+<body>
+    <h1>3 novembre - Exemple 8</h1>
+</body>
+</html>

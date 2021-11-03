@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>3 novembre - exemple 11</title>
+    <script>
+        // Fonction avec valeur de retour : nous utilisons dans ce type de fonction le mot-clef return
+        var donneTexte = function() {
+            var message = 'Bon après-midi !';
+            return message;
+        };
+
+        var stockRetour = donneTexte();
+        alert(stockRetour); // affiche 'Bon après-midi !'
+
+        // return permet de fournir une donnée en sortie de la fonction. La fonction cesse son activité  après le return.
+
+        var multiplicationParDixAvecRetourResultat = function(unNombre) {
+            var resultat = unNombre * 10;
+            return resultat;
+        };
+
+        var retourFonction = multiplicationParDixAvecRetourResultat(85);
+        alert(retourFonction); // affiche 850
+    </script>
+</head>
+<body>
+    <h1>3 novembre - exemple 11</h1>   
+</body>
+</html>

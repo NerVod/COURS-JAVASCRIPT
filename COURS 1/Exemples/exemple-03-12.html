@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>3 novembre - exemple 12</title>
+    <script>
+        // Booléens : true/1 ou false/0 :
+            true;
+            false;
+            1;
+            0;
+
+        // Opérateurs de comparaison
+            true == true; // donne true
+            true == false; // donne false
+            true != false; // donne true
+            16 > 10; // donne true
+            16 >= 10 + 6; // donne true
+            16 < 10; // donne false
+
+            18 === 9 * 2; // donne true
+            18 == '18'; // donne true
+            18 === '18'; // donne false
+
+        // Opérateurs logiques
+            !true == false; // donne true
+            true || false; // donne true
+            true && true; // donne true
+            true && false; // donne false
+            true && true && true && false; // donne false
+            true || false || false || false; // donne true
+
+            var nombre = 18;
+            nombre > 10 && nombre < 20; // prend en compte les nombres qui sont supérieurs à 10 et inférieurs à 20 -> donne true ici
+            nombre < 10 || nombre > 20; // prend en compte les nombres qui sont inférieurs à 10 et supérieurs à 20 -> donne false ici
+    </script>
+    <style>
+        tr td {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>3 novembre - exemple 12</h1>
+    <h2>Opérateurs de comparaison</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>opérateur</th>
+                <th>sens</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>==</td>
+                <td>égal à</td>
+            </tr>
+            <tr>
+                <td>!=</td>
+                <td>différent de</td>
+            </tr>
+            <tr>
+                <td>&gt;</td>
+                <td>supérieur à</td>
+            </tr>
+            <tr>
+                <td>&gt;=</td>
+                <td>supérieur ou égal</td>
+            </tr>
+            <tr>
+                <td>&lt;</td>
+                <td>inférieur à</td>
+            </tr>
+            <tr>
+                <td>&lt;=</td>
+                <td>inférieur ou égal</td>
+            </tr>
+            <tr>
+                <td>===</td>
+                <td>égalité de valeur et de type</td>
+            </tr>
+            <tr>
+                <td>!==</td>
+                <td>différent de valeur et/ou de type</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Opérateurs logiques</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>opérateur</th>
+                <th>sens</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>!</td>
+                <td>non</td>
+            </tr>
+            <tr>
+                <td>||</td>
+                <td>ou</td>
+            </tr>
+            <tr>
+                <td>&&</td>
+                <td>et</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

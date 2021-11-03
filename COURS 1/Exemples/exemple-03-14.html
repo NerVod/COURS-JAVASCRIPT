@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3 novembre - Exemple 14</title>
+    <script>
+        // Pour ajouter 3 à un nombre tant que ce nombre est inférieur à 20
+
+        var leNombre = 12;
+
+        var ajout = function() {
+            leNombre = leNombre + 3;
+        };
+        if (leNombre < 20) {
+            ajout();
+        }
+        if (leNombre < 20) {
+            ajout();
+        }
+        if (leNombre < 20) {
+            ajout();
+        }
+
+        alert(leNombre);
+        // Il est préférable d'utiliser une boucle. Nous allons découvrir la boucle while
+        /*
+            while (TEST) {
+                // code exécuté tant que TEST est vrai
+            }
+
+            ->  1. Il faut que TEST soit vrai au minimum une fois pour entrer dans la boucle.
+                2. Il faut un élément modificateur pour sortir à un moment de la boucle.
+        */
+
+        var autreNombre = 12;
+
+        while (autreNombre < 20) {
+            autreNombre = autreNombre + 3;
+        }
+        alert(autreNombre);
+    </script>
+</head>
+<body>
+    <h1>3 novembre - Exemple 14</h1>
+</body>
+</html>
