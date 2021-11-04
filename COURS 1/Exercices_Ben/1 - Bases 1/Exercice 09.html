@@ -3,16 +3,21 @@
 	<head>
 		<meta charset="utf-8"/>
 		<title>JavaScript : Exercice 9</title>
+		<script src="script-09.js"></script>
 		<script>
 			/*********************************
 			***********PRESENTATION***********
 			**********************************
 				Dans la programmation en JavaScript, on prend l'habitude de déclarer une function dans l'entête ainsi :
 			*/
-			var maFonction = function(){
-				alert('La fonction alert est déclenchée dans la fonction contenue dans la variable maFonction');
-			};
+
+
+			// var maFonction = function(){
+			// 	alert('La fonction alert est déclenchée dans la fonction contenue dans la variable maFonction');
+			// };
 			/*
+
+			
 				Cette fonction est, désormais, stockée en mémoire vive et, de ce fait, disponible dans l'emplacement (la variable) maFonction. À partir de la ligne de la déclaration, maFonction peut être utilisée partout dans le document dans les emplacements réservés au scripts JavaScript.
 				
 				Cette fonction peut être utilisée de façon directe (appel de la fonction) ou par l'entremise d'un attribut d'événement tels onclick, onload …
@@ -27,7 +32,7 @@
 			** 1 **
 				Exécutez la fonction maFonction ici (c'est à dire après ce commentaire).
 			*/
-
+			maFonction();
 			/*
 			** 2 **
 				Exécutez la fonction maFonction AU moment où l'utilisateur clique sur le premier paragraphe. Il faut utiliser l'attribut d'événement onclick.
@@ -37,7 +42,7 @@
 			** 3 **
 				Exécutez la fonction maFonction APRÈS le chargement du document. Il faut utiliser l'attribut d'événement onload.
 			*/
-
+			 
 			/*
 				4. Exécuter la fonction maFonction APRÈS que le navigateur ait chargé et affiché le premier paragraphe et AVANT qu'il ait chargé et affiché le second paragraphe.
 			*/
@@ -49,9 +54,9 @@
 
 		</script>
 	</head>
-	<body>
+	<body onload="maFonction()">
 		<h1>Mon nouveau document</h1>
-		<p>Premier paragraphe</p>
+		<p onclick="maFonction()" onload="maFonction()">Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>
 		<noscript>
 			<p>Veuillez activer JavaScript</p>
