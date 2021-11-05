@@ -27,13 +27,16 @@
 				Créez une fonction ajoutant un nombre à une chaîne de caractère.
 				Affichez la valeur de retour dans une boite de dialogue.
 			*/
-			var fonctionNombreEtMot = function(){
-				var nombreMot = 1 + 'message';
-				return nombreMot;
-			};
-			var messageAlerte = fonctionNombreEtMot();
-			alert(messageAlerte);
-				
+				// 1. Créez une fonction
+				var monOutil = function() {
+					// 2. Cette fonction ajoute un nombre à une chaîne de caractère.
+					var ajout = 18 + 'chocolat';
+					// 3. Cette fonction a une valeur de retour
+					return ajout;
+				};
+				// 4. Affichez la valeur de retour dans une boite de dialogue.
+				var retourMonOutil = monOutil();
+				alert(retourMonOutil);
 			/*
 			** 2 **
 				Reprenez la fonction du point 3 de l'exercice précédent.
@@ -41,14 +44,12 @@
 			*/
 
 			var assemblageTableau = function(elements) {
-				var resultat= elements[0] + elements[1];
-				return(resultat);
+				var resultat = elements[0] + elements[1];
+				return resultat; 
 			};
-			var resultatFonction = assemblageTableau(['Le début', ' et la fin']);
+
+			var resultatFonction = assemblageTableau(['Le début',' et la fin']);
 			alert(resultatFonction);
-
-
-
 		</script>
 	</head>
 	<body>

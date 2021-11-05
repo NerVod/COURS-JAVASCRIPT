@@ -13,6 +13,16 @@
 
 				Utilisez l'attribut d'événement onload, la fonction confirm(), la fonction alert() et un bloc conditionnel if/else.
 			*/
+			
+			var confirmation = function confirmationUtilisateur() {
+				var choix = confirm('Voulez-vous continuer ?');
+				if (choix == true){
+					alert('Vous avez cliqué sur ok');
+				} else {
+					alert('Vous avez choisi d\'annuler');
+				}
+			};
+
 				
 			/*
 			** 2 **
@@ -22,20 +32,52 @@
 
 				Utilisez l'attribut d'événement onclick, la fonction confirm(),la fonction alert() et un bloc conditionnel if/else
 			*/
+
+			var confirmClic = function() {
+				var choixClic = confirm('Voulez-vous continuer ?')
+				if (choixClic == true) {
+					alert('Vous avez clisqué sur ok');
+				} else {
+					alert('Vous avez choisi d\'annuler');
+				}
+			};
+
+
+
 				
 			/*
 			** 3 **
 				Réalisez le programme (algorithme) suivant :
-				Quand l'utilisateur survole le premier titre, j'affiche une B.d.D contenant le message « Voulez vous continuer ? ». Si l'utilisateur clique sur OK, j'affiche une B.d.D avec le message « Vous avez  cliqué sur OK ! » sinon j'affiche une B.d.D avec le message « Vous avez choisi d'annuler ».
+				Quand l'utilisateur survole le premier titre,
+				 j'affiche une B.d.D contenant le message « Voulez vous continuer ? ».
+				  Si l'utilisateur clique sur OK, j'affiche une B.d.D avec le message « Vous avez  cliqué sur OK ! »
+				   sinon j'affiche une B.d.D avec le message « Vous avez choisi d'annuler ».
 
 				
 				Utilisez l'attribut d'événement onmouseover, la fonction confirm(), la fonction alert() et un bloc conditionnel if/else.
 			*/
+
+
+
+			var survolAction = function () {
+				var retourAction = confirm('Voulez-vous continuer ?');
+				if (retourAction == true) {
+						alert('Vous avez cliqué sur ok');
+					} else {
+						alert('Vous avez-choisi d\'annuler');
+					};
+			}
+			
+
+
+
+
+
 		</script>
 	</head>
-	<body>
-		<h1>Mon nouveau document</h1>
-		<p>Premier paragraphe</p>
+	<body onload="confirmation()">
+		<h1 onMouseOver="survolAction()">Mon nouveau document</h1>
+		<p onclick="confirmClic()">Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>
 		<noscript>
 			<p>Veuillez activer JavaScript</p>

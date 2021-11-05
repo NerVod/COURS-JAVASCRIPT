@@ -19,18 +19,22 @@
 				
 				Utilisez l'attribut d'événement onclick, la fonction prompt() et la fonction alert()
 			*/
+			var decision = function() {
+				var reponse = prompt('Veuillez saisir un message');
+				alert(reponse);
+			};
 
 			/*
 				Quelle information nous retourne la fonction prompt si :
-				_ l'utilisateur clique sur Annuler ?
-				_ ne saisit rien et clique sur Ok ?
-				_ saisit un texte et clique sur Ok ?
+				_ l'utilisateur clique sur Annuler ?     null
+				_ ne saisit rien et clique sur Ok ?      rien du tout
+				_ saisit un texte et clique sur Ok ?	le texte saisi
 			*/
 		</script>
 	</head>
 	<body>
 		<h1>Mon nouveau document</h1>
-		<p>Premier paragraphe</p>
+		<p onclick="decision()">Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>
 		<noscript>
 			<p>Veuillez activer JavaScript</p>

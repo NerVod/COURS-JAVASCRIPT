@@ -35,33 +35,33 @@
 				Créez une fonction avec un argument en entrée affichant un message dans une boite de dialogue.
 				Exécutez cette fonction avec une chaîne de caractères.
 			*/
-				var direUnMot = function(commentaire) {
-					alert(commentaire);
-				}
-				direUnMot('Bonjour');
+				var afficheMessage = function(unMessage) {
+					alert(unMessage);
+				};
+
+				afficheMessage("Un message dans la fonction.");
 			/*
 			** 2 **
 				Créez une seconde fonction avec deux arguments en entrée. Les deux arguments sont concaténés et affichés dans une boite de dialogue.
 				Exécutez cette fonction avec deux chaînes de caractères.
 			*/
-			var direDeuxMots = function(mot1, mot2) {
-				alert(mot1 + ' ' + mot2);
-			}
-			direDeuxMots('les', 'amis');
+				var assemblage = function(a,b) {
+					var resultat = a + b;
+					alert(resultat);
+				};
+
+				assemblage('Bonjour ','tout le monde')
 			/*
 			** 3 **
 				Reprenez la précédente fonction. Réécrivez-la de telle façon à utiliser un seul argument en entrée tout en gardant la concaténation. Vous utilisez donc un tableau comme argument.
 				Exécutez cette fonction avec un tableau contenant deux chaînes de caractères.
 			*/
-			
-			var fonctionArray = function(tableau) {
-				var tableau
-				alert(tableau);
-			};
-			tableau = ['fonction', ' tableau']
-			fonctionArray(tableau);
+				var assemblageTableau = function(elements) {
+					var resultat = elements[0] + elements[1];
+					alert(resultat);
+				};
 
-
+				assemblageTableau(['Le début',' et la fin']);
 		</script>
 	</head>
 	<body>

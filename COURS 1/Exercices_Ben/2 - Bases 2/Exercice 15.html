@@ -26,9 +26,22 @@
 
 				Utilisez l'attribut d'événement onload, la fonction confirm() et une boucle while.
 			*/
+
+				var confirmation = function() {
+					var choixUtilisateur;
+					choixUtilisateur = confirm('Voulez-vous continuer ?');
+					while (choixUtilisateur == true) {
+						choixUtilisateur =  confirm('Voulez-vous continuer ?');			
+					}	
+				};
+
+
+
+
+
 		</script>
 	</head>
-	<body>
+	<body onload="confirmation()">
 		<h1>Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>

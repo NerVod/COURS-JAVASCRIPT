@@ -14,12 +14,23 @@
 
 				Utilisez l'attribut d'événement onclick, la fonction prompt(), la fonction alert() et une boucle while.
 			*/
+
+			var reponseUtilisateur = function() {
+				var condition = prompt(); {
+					while (condition == false || condition == null ) {
+						condition = prompt();	
+					}
+				alert(condition);
+				}
+			};
+
+
 		</script>
 	</head>
 	<body>
 		<h1>Mon nouveau document</h1>
-		<p>Premier paragraphe</p>
-		<p>Deuxième paragraphe</p>
+		<p onclick="reponseUtilisateur()">Premier paragraphe</p>
+		<p onclick="reponseUtilisateur()">Deuxième paragraphe</p>
 		<noscript>
 			<p>Veuillez activer JavaScript</p>
 		</noscript>
