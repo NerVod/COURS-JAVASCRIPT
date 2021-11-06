@@ -43,7 +43,21 @@
 				
 				Utilisez la boucle while avec un compteur ainsi que la fonction alert().
 			*/
-			
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+		var nombreTours = function() { 
+			var compteur = 1;
+			while (compteur < 4) {
+				alert(compteur);
+				compteur++
+			};
+		}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////			
+
+
+
 			/*
 			** 2 **
 				Réalisez le programme (algorithme) suivant :
@@ -51,9 +65,21 @@
 				
 				Utilisez la boucle while avec un compteur ainsi que la fonction alert().
 			*/
+
+		var annonce = function() {
+			var tableau = ['Un petit message ','qui me sert ','à utiliser une boucle while .']
+			var i = 0;
+			while ( i < tableau.length) {
+				alert(tableau[i]);
+				i++;
+			};
+			
+		};
+
+		// (premier exercice) onload="nombreTours()"
 		</script>
 	</head>
-	<body>
+	<body onload="annonce()">
 		<h1>Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>
