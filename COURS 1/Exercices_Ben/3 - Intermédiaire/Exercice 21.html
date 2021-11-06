@@ -20,10 +20,48 @@
 
 				Utilisez l'attribut d'événement onclick, la fonction prompt(), la fonction alert() et la boucle while.
 			*/
+
+			
+			
+			var messageFinal = function()  {
+				var message1 = function() {
+					var reponse1 = prompt('saisir une message'); {
+						while (reponse1 == false || reponse1 == null) {
+							reponse1 = prompt('Il faut vraiment saisir un message !')
+						};
+						return(reponse1);
+					};	
+					
+				};
+
+				var message2 = function() {
+					var reponse2 = prompt('Saisir de nouveau un message'); {
+						while ( reponse2 == false || reponse2 == null) {
+							reponse2 = prompt('Veuillez vraiment saisir un nouveau message !')
+						};
+						return(reponse2);
+					};
+				
+				};
+
+				var partie1 = message1();
+				var partie2 = message2();
+
+				alert(partie1 + partie2);
+				
+			};
+		
+	
+
+			
+
+
+
+
 		</script>
 	</head>
 	<body>
-		<h1>Mon nouveau document</h1>
+		<h1 onclick="messageFinal()">Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>
 		<noscript>
