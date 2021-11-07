@@ -13,9 +13,43 @@
 
 				Utilisez l'attribut d'événement onload, la fonction prompt(), la fonction parseFloat(), la fonction isNaN() et d'une boucle while.
 			*/
-		</script>
+			
+			// var saisieNombre = function () {
+			// 	var saisieUtilisateur = prompt('Saisir un nombre'); { 
+			// 	while (saisieUtilisateur == false || saisieUtilisateur == null) {
+			// 		 saisieUtilisateur = prompt('Il faut saisir le champs')
+			// 	};
+			// 	return(saisieUtilisateur); {
+			// 		var nombreSaisi = parseFloat(saisieUtilisateur); {
+			// 				var nombreValide = isNaN(nombreSaisi); { 
+			// 					while (nombreValide == true) {
+			// 					saisieUtilisateur = prompt('j\'ai dit un nombre !');	
+			// 					};
+			// 					//return(saisieUtilisateur) 
+			// 				};
+			// 		};
+			// 		alert(saisieUtilisateur);
+			// 	};
+			// 	}; 	
+			// };
+
+			var saisieNombre = function () {
+				var saisieUtilisateur = prompt('Saisir un nombre'); {
+					var nombreSaisi = parseFloat(saisieUtilisateur); {
+							var nombreValide = isNaN(nombreSaisi); { 
+								while (nombreValide == true || saisieUtilisateur == false || saisieUtilisateur == null) {
+								saisieUtilisateur = prompt('j\'ai dit un nombre !');	
+								};
+								alert(saisieUtilisateur);
+							};
+					};
+				};				 	
+			};
+
+			
+			</script>
 	</head>
-	<body>
+	<body onload="saisieNombre()">
 		<h1>Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>
