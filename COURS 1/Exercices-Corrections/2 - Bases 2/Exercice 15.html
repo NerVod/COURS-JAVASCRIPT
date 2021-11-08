@@ -26,34 +26,27 @@
 
 				Utilisez l'attribut d'événement onload, la fonction confirm() et une boucle while.
 			*/
+			var questions = function() {
+				var reponse = confirm('Voulez-vous continuer ?');
+				while (reponse) {
+					reponse = confirm('Voulez-vous continuer ?');
+				}
+			};
 
-				var confirmation = function() {
-					var choixUtilisateur = confirm('Voulez-vous continuer ?');
-					while (choixUtilisateur) {
-						choixUtilisateur =  confirm('Voulez-vous continuer ?');			
-					}	
-				};
+			/*
+				Réponse simplifiée : 
 
-
-				// réponse optimisée
 				var questions = function() {
 					var reponse = true;
 					while (reponse) {
-						 reponse = confirm('Voulez-vous continuer sans fin ?')
+						reponse = confirm('Voulez-vous continuer ?');
 					}
 				};
-				
-
-
-
-
-
-
-
+			*/
 		</script>
 	</head>
-	<body onload="confirmation()">
-		<h1 onclick="questions()">Mon nouveau document</h1>
+	<body onload="questions();">
+		<h1>Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>
 		<noscript>

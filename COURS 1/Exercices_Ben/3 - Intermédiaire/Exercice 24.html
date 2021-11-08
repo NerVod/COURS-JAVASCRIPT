@@ -14,41 +14,44 @@
 				Utilisez l'attribut d'événement onclick, la fonction prompt(), la fonction alert(), la fonction parseFloat(), la fonction isNaN() et des boucles while.
 			*/
 
+			
+
 			var somme = function () {
-
-				var nombre1 = prompt('saisir le premier nombre'); {
-					var transfoNombre1 = parseFloat(nombre1); {
-						var verifNombre1 = isNaN(transfoNombre1); {
-							while (verifNombre1 == true || nombre1 == false || nombre1 == null) {
-								nombre1 = prompt('il faut un premier nombre');
-							};
-							
-						};
-					};
+				var nombre1 = prompt('saisir le premier nombre');
+				nombre1 = parseFloat(nombre1);
+				var verifNombre1 = isNaN(nombre1);
+				while (verifNombre1 == true) {
+					nombre1 = prompt('il faut vraiment un premier nombre');
+					nombre1 = parseFloat(nombre1);
+					verifNombre1 = isNaN(nombre1);
+					
 				};
-				var nombre2 = prompt('saisir le second nombre'); {
-					var transfoNombre2 = parseFloat(nombre2); {
-						var verifNombre2 = isNaN(transfoNombre2); {
-							while (verifNombre2 == true || nombre2 == false || nombre2 == null) {
-								nombre2 = prompt('il faut un second nombre');
-							};
-							
-						};
-					};
-				};
+				//alert(nombre1);  pour vérifier la sortie de la première donnée
 
-				var premierNombre = parseFloat(nombre1);
-				var secondNombre = parseFloat(nombre2);
-				var resultat = (premierNombre + secondNombre);
+				var nombre2 = prompt('Il faut saisir un second nombre');
+				nombre2 = parseFloat(nombre2);
+				var verifNombre2 = isNaN(nombre2);
+				while (verifNombre2) {
+					nombre2 = prompt('Il faut vraiment un second nombre')
+					nombre2 = parseFloat(nombre2);
+					verifNombre2 = isNaN(nombre2)
+				};
+				//alert(nombre2); pour vérifier la sortie de la seconde donnée
+
+				var resultat = (nombre1 + nombre2)
 				alert(resultat);
+
 			};
+
+		
+
 
 			
 
 		</script>
 	</head>
 	<body>
-		<h1 onclick="test()">Mon nouveau document</h1>
+		<h1>Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
 		<p onclick="somme()">Deuxième paragraphe</p>
 		<noscript>

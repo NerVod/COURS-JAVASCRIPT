@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>5 novembre - Exemple 2</title>
+    <script>
+        var compteur = 1;
+        while(compteur < 4) {
+            alert('Boucle while : ' + compteur);
+            compteur = compteur + 1;
+        };
+
+        // le même résultat avec une boucle for :
+        /*
+            for (valeur de départ;test;changement de valeur) {
+                code à exécuter
+            }
+        */
+
+        for (var i=1;i<4;i=i+1) {
+            alert('Boucle for : ' + i);
+        }
+        
+        // on peut aussi écrire i++ au lieu de i = i + 1
+        
+        for (var i=1;i<4;i++) {
+            alert('Boucle for : ' + i);
+        }
+
+    </script>
+</head>
+<body>
+    <h1>5 novembre - Exemple 2</h1>
+</body>
+</html>

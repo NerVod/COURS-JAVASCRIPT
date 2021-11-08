@@ -19,11 +19,9 @@
 
 				Utilisez la fonction confirm()
 			*/
-			var confirmer = function confirmation() {
-				confirm('Ceci est un choix');
-			};
-
-
+				var auClic = function() {
+					confirm('Ceci est un choix');
+				};
 			
 			/*			
 			** 2 **
@@ -32,19 +30,15 @@
 				
 				Utilisez la fonction confirm() puis  la fonction alert().
 			*/
-			var confirmer2 = function confirmAvecRetour() {
-				var reponse = confirm('Ceci est un choix bis');
-				alert(reponse);
-			};
-
+			
+			
 			/*
 				Quelle information nous retourne la fonction confirm() si l'utilisateur clique sur le choix OK ? Sur Annuler ?
 			*/
-
-			// ok => true
-			// annuler => false
-
-
+				var autreClic = function() {
+					var sauvegardeConfirm = confirm('Ceci est un choix');
+					alert(sauvegardeConfirm);
+				};
 			/*	
 			** 3 **
 				Réalisez le programme (algorithme) suivant :
@@ -52,20 +46,18 @@
 
 				Utilisez l'attribut d'événement onload, la fonction confirm(), la fonction alert() et un bloc conditionnel if.
 			*/
-			var confirmation = function confirmationUtilisateur() {
-				var retourUtilisateur = confirm('Voulez-vous continuer ?');
-				if (retourUtilisateur)  {
+				var actionFinale = function() {
+					var reponseUtilisateur = confirm('Voulez-vous continuer ?');
+					if (reponseUtilisateur) {
 						alert('Vous avez cliqué sur OK');
 					}
-			};
-			
-			
+				};
 		</script>
 	</head>
-	<body onload="confirmation()">
+	<body onload="actionFinale();">
 		<h1>Mon nouveau document</h1>
-		<p onclick="confirmer()">Premier paragraphe</p>
-		<p onclick="confirmer2()">Deuxième paragraphe</p>
+		<p onclick="auClic();">Premier paragraphe</p>
+		<p onclick="autreClic();">Deuxième paragraphe</p>
 		<noscript>
 			<p>Veuillez activer JavaScript</p>
 		</noscript>

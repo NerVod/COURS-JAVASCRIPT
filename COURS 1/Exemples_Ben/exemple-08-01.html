@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script-08-01.js"></script>
+    <title>Document</title>
+    <style>
+.conteneur {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.conteneur button {
+    flex-basis: 20%;
+    margin: 0 2% 20px;
+}
+
+    </style>
+</head>
+<body>
+<h1>8 novembre - exemple 1</h1>
+
+<div class="conteneur">
+    <button onclick="salutation();">Bonjour</button>
+    <button onclick="calculMoyenneUn();">Affichage Moyenne v1</button>
+    <button onclick="calculMoyenneDeux(89,74,16,39);">Affichage Moyenne v2</button>
+    <button onclick="var retourFonction  = calculMoyenneTrois(89,74,16,39); alert('La moyenne est ' + retourFonction);">Affichage Moyenne v3</button>
+    <button onclick="actionMoyenneUn()">Affichage moyenne v4</button>
+    <button onclick="actionMoyenneDeux()">Affichage moyenne v5</button>
+    <button onclick="actionMoyenneTrois()">Affichage moyenne v6</button>
+    <button onclick="actionMoyenneQuatre()">Affichage moyenne v7</button>
+    <button onclick="actionMoyenneCinq()">Affichage moyenne v8</button>
+</div>
+
+    
+</body>
+</html>

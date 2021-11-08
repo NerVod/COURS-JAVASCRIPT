@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <script src="exemple-08-01.js"></script>
+    <title>8 novembre - Exemple 1</title>
+    <style>
+        .conteneur {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .conteneur button {
+            flex-basis: 20%;
+            margin: 0 2% 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>8 novembre - Exemple 1</h1>
+    <div class="conteneur">
+        <button onclick="salutation();">Bonjour</button>
+        <button onclick="calculMoyenneUn();">Affichage moyenne v1</button>
+        <button onclick="calculMoyenneDeux(89,74,16,39);">Affichage moyenne v2</button>
+        <button onclick="var retourFonction = calculMoyenneTrois(89,74,16,39); alert('La moyenne est ' + retourFonction);">Affichage moyenne v3</button>
+        <button onclick="actionMoyenneUn();">Affichage moyenne v4</button>
+        <button onclick="actionMoyenneDeux();">Affichage moyenne v5</button>
+        <button onclick="actionMoyenneTrois();">Affichage moyenne v6</button>
+        <button onclick="actionMoyenneQuatre();">Affichage moyenne v7</button>
+    </div>
+</body>
+</html>

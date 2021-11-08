@@ -17,9 +17,32 @@
 				Utilisez l'attribut d'événement onload, la fonction prompt(), une boucle for, une boucle while et la fonction alert().
 				
 			*/
+			var compilationTexte = function() {
+				for (var i=0; i<4; i++) {
+					var tableauReponse = prompt('Saisir un message');
+					
+						while (tableauReponse == false || tableauReponse == null) {
+							tableauReponse = prompt('saisir un message')
+						}
+					
+					var retourCycle = tableauReponse;
+					var compilation = [];
+					var ajoutDonnees = compilation.push(retourCycle);
+					
+
+				}
+				alert(ajoutDonnees);
+				
+			};
+
+
+
+
+
+
 		</script>
 	</head>
-	<body>
+	<body onload="compilationTexte()">
 		<h1>Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>8 novembre - Exemple 3</title>
+    <style>
+        code {
+            background-color: #000;
+            color: white;
+        }
+    </style>
+    <script src="exemple-08-03.js"></script>
+</head>
+<body>
+    <h1>8 novembre - Exemple 3</h1>
+    <p>Il est possible de lancer du code avec un temps de retard :</p>
+    <h2><code>setTimeout() - clearTimeout()</code></h2>
+    <p>La fonction <code>setTimeout()</code> permet de lancer un code avec un temps de retard indiqué en millisecondes.</p>
+    <p>La fonction  <code>setTimeout()</code> retourne un identifiant unique au moment de son exécution. Cet identifiant permet d'annuler l'action en utilisant <code>clearTimeout()</code>.</p>
+    <h2><code>setInterval() - clearInterval()</code></h2>
+    <p>La fonction <code>setInterval()</code> permet de lancer un code à interval régulier. Le temps est indiqué en millisecondes.</p>
+    <p>La fonction  <code>setInterval()</code> retourne un identifiant unique au moment de son exécution. Cet identifiant permet d'annuler l'action en utilisant <code>clearInterval()</code>.</p>
+    <div>
+        <p>Lancement <code>setTimeout()</code> : <button onclick="lancementSetTimeout()">Action</button></p>
+        <p>Arrêt <code>setTimeout()</code> : <button onclick="arretSetTimeout()">Action</button></p>
+        <p>Lancement <code>setInterval()</code> : <button onclick="lancementSetInterval()">Action</button></p>
+        <p>Arrêt <code>setInterval()</code> : <button onclick="arretSetInterval()">Action</button></p>
+    </div>
+</body>
+</html>

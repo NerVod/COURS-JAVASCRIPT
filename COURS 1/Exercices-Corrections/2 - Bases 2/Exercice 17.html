@@ -14,32 +14,24 @@
 				_ Sinon (si l'utilisateur n'a pas cliqué sur Annulé ET n'a pas rien saisi), j'affiche la saisie de l'utilisateur dans une B.d.D.
 
 			*/
-			
-			var fonctionExo = function() {
-				var reponseUtilisateur = prompt(); {
-					if (reponseUtilisateur == null){  /* clic ok vide */
-						alert('Vous avez annulé la saisie');
-					}
-					else if (reponseUtilisateur == false) { /* clic annuler*/
+			var uneQuestion = function() {
+				var reponse = prompt('Demande texte');
+				/* clique annuler */
+				if (reponse == null) {
+					alert('Vous avez annulé la saisie');
+				} else {
+					/*clique OK vide*/
+					if (reponse == '') {
 						alert('Vous n\'avez rien saisi');
+					} else {
+						/*texte saisi*/
+						alert(reponse);
 					}
-					else {
-						alert(reponseUtilisateur);
-					};
-				};
+				}
 			};
-
-
-
-
-
-
-
-
-
 		</script>
 	</head>
-	<body onload="fonctionExo()">
+	<body onload="uneQuestion();">
 		<h1>Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>
