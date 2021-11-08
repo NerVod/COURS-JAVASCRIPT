@@ -18,21 +18,17 @@
 				
 			*/
 			var compilationTexte = function() {
+				var compilation = [];
 				for (var i=0; i<4; i++) {
 					var tableauReponse = prompt('Saisir un message');
 					
 						while (tableauReponse == false || tableauReponse == null) {
 							tableauReponse = prompt('saisir un message')
-						}
-					
-					var retourCycle = tableauReponse;
-					var compilation = [];
-					var ajoutDonnees = compilation.push(retourCycle);
-					
-
+						}					
+					compilation.push(tableauReponse);
+					/*alert(tableauReponse);*/
 				}
-				alert(ajoutDonnees);
-				
+				alert(compilation);				
 			};
 
 
