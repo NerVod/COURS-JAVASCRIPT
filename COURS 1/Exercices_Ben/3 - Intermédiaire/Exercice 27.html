@@ -13,9 +13,35 @@
 				
 				Il n'est pas nécessaire pour la seconde boucle for d'utiliser, par exemple, i < 4 comme limite pour la boucle. Regardez l'indication de l'Exercice 27bis pour trouver la solution.
 			*/
+			var compilationTexte = function() {
+				var compilation = [];
+				for (var i=0; i<4; i++) {
+					var tableauReponse = prompt('Saisir un message');
+					
+						while (tableauReponse == false || tableauReponse == null) {
+							tableauReponse = prompt('saisir un message')
+						}					
+					compilation.push(tableauReponse);
+					/*alert(tableauReponse);*/
+				}
+				alert(compilation);	
+				
+				compilation.forEach(element => {
+					alert(element);
+				});		
+			};
+
+
+
+
+
+
+
+
+
 		</script>
 	</head>
-	<body>
+	<body onload="compilationTexte()">
 		<h1>Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>
