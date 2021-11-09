@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>9 novembre - Exemple 4</title>
+    <script>
+        var element = function(message) {
+            alert(message);
+        };
+
+        // La référence de la fonction présente dans element l'est aussi désormais dans autre.
+        var autre = element;
+        autre('Lancement de la fonction autre');
+
+        var stock = ['truc','bidule'];
+
+        // La référence de la fonction déjà présente dans element et autre l'est aussi désormais dans l'indice 2 du tableau contenu dans stock.
+        stock[2] = autre;
+        stock[2]('Lancement de la fonction placée à l\indice 2 du tableau dans stock.');
+
+        var lancementFonction = function(fonctionALancer) {
+            fonctionALancer('Je lance une fonction dans ma fonction.');
+        };
+
+        lancementFonction(element);
+    </script>
+</head>
+<body>
+    <h1>9 novembre - Exemple 4</h1>
+</body>
+</html>

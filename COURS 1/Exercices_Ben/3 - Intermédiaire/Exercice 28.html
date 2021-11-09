@@ -10,14 +10,41 @@
 				Dans l'exercice précédent, le nombre de saisies de l'utilisateur est écrit dans le code.
 				
 				Reprenez le code de l'exercice précédent. Après chaque saisie, demandez à l'utilisateur s'il souhaite faire une nouvelle saisie.
+
 				Quand il répond par la négative, affichez successivement toutes ses saisies dans des B.d.D.
 				
 				Utilisez l'attribut d'événement onload, la fonction prompt(), une boucle for, des boucles while et la fonction alert().
 			*/
+
+			var compilationTexte = function() {
+
+				var messagesUtilisateur = [];
+				var indice = 1;
+				for (var i; i<indice; i++) {
+
+					var saisieUtilisateur = null;
+					while (saisieUtilisateur == '' || saisieUtilisateur == null) {
+					saisieUtilisateur = prompt('Veuillez saisir un message');
+					}
+					messagesUtilisateur.push(saisieUtilisateur);
+					alert(messagesUtilisateur);
+
+					var poursuivre = false;
+
+					
+
+				}
+
+
+
+			};
+
+
+
 		</script>
 	</head>
 	<body>
-		<h1>Mon nouveau document</h1>
+		<h1 onclick="compilationTexte()">Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>
 		<noscript>
