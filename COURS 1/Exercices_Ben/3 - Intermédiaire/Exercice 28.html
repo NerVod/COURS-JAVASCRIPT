@@ -19,22 +19,25 @@
 			var compilationTexte = function() {
 
 				var messagesUtilisateur = [];
-				var indice = 1;
-				for (var i; i<indice; i++) {
+				for (var i=0; ; i++) {
 
-					var saisieUtilisateur = null;
+					var saisieUtilisateur = '';
+					var poursuivre = false;
 					while (saisieUtilisateur == '' || saisieUtilisateur == null) {
 					saisieUtilisateur = prompt('Veuillez saisir un message');
-					}
-					messagesUtilisateur.push(saisieUtilisateur);
-					alert(messagesUtilisateur);
-
-					var poursuivre = false;
-
-					
-
 				}
 
+				poursuivre = confirm('Voulez-vous continuer ?');
+				messagesUtilisateur.push(saisieUtilisateur);
+
+					while(poursuivre == true){					
+						saisieUtilisateur = prompt('Veuillez saisir un nouveau message');
+						messagesUtilisateur.push(saisieUtilisateur);
+						poursuivre = confirm('Voulez-vous continuer ?');
+				}
+				alert(messagesUtilisateur);
+				return messagesUtilisateur;
+				}
 
 
 			};
