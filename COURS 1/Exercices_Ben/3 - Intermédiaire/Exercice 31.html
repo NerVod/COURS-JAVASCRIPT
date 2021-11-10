@@ -14,11 +14,32 @@
 					_ Si l'utilisateur saisit un texte, ce texte est utilisé comme url pour ouvrir une nouvelle fenêtre.
 					_ Sinon un message s'affiche dans une b.d.d avec le texte : « Tant pis ! ».
 			*/
+			var allerGoogle = function() {
+				var declencheur = null;
+				while(declencheur == null) {
+					declencheur = confirm('Voulez-vous ouvrir Google ?')
+				}
+				if (declencheur) {
+					open('https://www.google.com/', 'Google', 'directories=no');
+					declencheur= null;
+				} else {
+					var autreLien = prompt('Veuillez saisir l\'url d\'un site alternatif');
+					if(autrelien != null) {
+						open( autreLien , 'autre lien', 'directories=no');
+					} else {
+						alert('Tant pis !');
+					}
+				}
+			};
+
+
+
+
 		</script>
 	</head>
 	<body>
 		<h1>Mon nouveau document</h1>
-		<p>Premier paragraphe</p>
+		<p onclick="allerGoogle()">Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>
 		<noscript>
 			<p>Veuillez activer JavaScript</p>

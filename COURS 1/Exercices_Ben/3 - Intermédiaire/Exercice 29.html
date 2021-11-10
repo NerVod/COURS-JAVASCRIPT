@@ -34,16 +34,32 @@
 			/*********************************
 			*************EXERCICE*************
 			**********************************
-				Réalisez les programmes (algorithmes) suivants : Quand l'utilisateur clique sur le titre, ouvrez une fenêtre vers Google.
-				Quand il clique sur le premier paragraphe ouvrez une fenêtre vers Bing.
-				Quand il survole sur le troisième paragraphe ouvrez une fenêtre vers DuckDuckGo.
+			Réalisez les programmes (algorithmes) suivants : Quand l'utilisateur clique sur le titre, ouvrez une fenêtre vers Google.
+			Quand il clique sur le premier paragraphe ouvrez une fenêtre vers Bing.
+			Quand il survole sur le troisième paragraphe ouvrez une fenêtre vers DuckDuckGo.
 			*/
+			lienGoogle = function() {
+				open('http://www.google.com', 'Google', 'directories=no')
+			}
+
+			lienBing = function() {
+				open('https://www.bing.com', 'Bing', 'directories=yes', )
+			}
+
+			lienDuck = function() {
+				open('https://duckduckgo.com/', 'Duck', 'directores=yes', 'status = yes', 'toolbar=yes')
+			}
+			
+
+
 		</script>
+
+
 	</head>
 	<body>
-		<h1>Mon nouveau document</h1>
-		<p>Premier paragraphe</p>
-		<p>Deuxième paragraphe</p>
+		<h1 onclick="lienGoogle()">Mon nouveau document</h1>
+		<p onclick="lienBing()">Premier paragraphe</p>
+		<p onmouseover="lienDuck()">Deuxième paragraphe</p>
 		<noscript>
 			<p>Veuillez activer JavaScript</p>
 		</noscript>

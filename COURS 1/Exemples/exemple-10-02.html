@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>10 novembre - exemple 2</title>
+    <script>
+        var animal = 'éléphant';
+
+        switch (animal) {
+            case 'chat':
+                alert('Je miaule.');
+                // Il n'y a pas de break pour passer à la ligne suivante sans sortir
+            case 'lapin':
+            case 'chien':
+                alert('Je suis un animal de compagnie.');
+                break; // Le break fait sortir du switch
+            case 'éléphant':
+                alert('Je vie dans les grands espaces.');
+                break;
+            default: // nous arrivons ici si aucune valeur ne correspond à celle présente dans notre variable
+                alert('Je suis un autre animal.');
+        }
+    </script>
+</head>
+<body>
+    <h1>10 novembre - exemple 2</h1>
+    <p>Lorsque nous souhaitons faire plusieurs tests sur une même variable, le code devient vite peu lisible avec de nombreuses imbrications de if/else</p>
+    <p>Si tous les tests portent sur des égalités, il est préférable d'utiliser un switch.</p>
+</body>
+</html>

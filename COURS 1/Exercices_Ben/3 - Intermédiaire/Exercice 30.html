@@ -11,11 +11,32 @@
 				Quand l'utilisateur sur le premier paragraphe, affichez une B.d.D avec champ de saisie à l'utilisateur.
 				L'utilisateur doit impérativement saisir une chaîne de caractère. Cette chaîne de caractère est ensuite utilisée pour ouvrir une nouvelle fenêtre à l'aide de la fonction open.
 			*/
+
+			var declencheur = function() {
+				var motUtilisateur = null;
+				while (motUtilisateur == null) {
+					motUtilisateur = prompt('Veuillez saisir le mot google');
+					
+				}
+				
+				while(motUtilisateur) {
+					open('https://www.google.com/', 'Google', 'directories=yes');
+					motUtilisateur = null;
+				}
+
+
+			};
+
+
+
+
+
+
 		</script>
 	</head>
 	<body>
 		<h1>Mon nouveau document</h1>
-		<p>Premier paragraphe</p>
+		<p onclick="declencheur()">Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>
 		<noscript>
 			<p>Veuillez activer JavaScript</p>
