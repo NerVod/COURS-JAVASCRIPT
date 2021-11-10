@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 novembre exemple 4</title>
+    <script>
+        // première manière
+        var compteur1 = 0;
+        var affichageUn = function() {
+            alert(compteur1);
+            compteur1 ++;
+            if(compteur1<5)
+            affichageUn();
+        }
+        affichageUn()
+
+
+
+
+        // deuxième manière
+        var compteur2 = 0;
+        var affichageDeux = function() {
+            alert(compteur2);
+            compteur2 ++;
+            if(compteur2 == 5) return;
+            affichageDeux()
+        }
+        affichageDeux();
+
+        
+
+        // troisième manière
+       
+        var affichageTrois = function(leCompteur) {
+            alert(compteurTrois);
+            
+            if(compteurTrois <4) affichageTrois(leCompteur +1)
+        };
+        affichageTrois(0);
+
+    </script>
+</head>
+<body>
+    <h1>10 novembre exemple 4</h1>
+    
+</body>
+</html>

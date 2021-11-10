@@ -24,8 +24,9 @@
 					declencheur= null;
 				} else {
 					var autreLien = prompt('Veuillez saisir l\'url d\'un site alternatif');
-					if(autrelien != null) {
-						open( autreLien , 'autre lien', 'directories=no');
+
+					if(autreLien) {
+						open(autreLien , 'autre lien', 'directories=no');
 					} else {
 						alert('Tant pis !');
 					}

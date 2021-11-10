@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 novembre exemple 5</title>
+    <script>
+
+// use strict oblige à bien suivre un certain nombre de règles. En fait il transform les 'alertes' en 'erreur'
+// + d'infos : mdn mode strict
+
+'use strict';
+
+
+
+
+
+       var jour = true;
+       alert(jour ? 'soleil' : 'lune')
+
+// une version plus élaborée 
+var meteo = true;
+var phrase = `la météo nous annonce ${ meteo ? 'du soleil' : 'de la pluie' }`
+
+alert(phrase);
+//////////////////////////////////////////////////////////////////////////
+//pour en savoir plus : mdn les ternaires
+//////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+var maFonction =() => {
+    alert('Bonjour')
+}
+maFonction();
+
+// On peut écrire la fonction sur une seule ligne. Dans ce cas :
+
+var autreFonction = () => alert('salut')
+autreFonction();
+
+// sur une seule ligne, le return est implicite
+
+var addition = (a, b) => a + b;
+
+var total = addition(10,20);
+alert(total);
+
+
+// Quand il y a un seul argument, les parenthèses sont facultatives
+var auCarre = unNombre => unNombre * unNombre;
+
+var resultat = auCarre(11);
+alert(resultat);
+
+
+
+
+    </script>
+</head>
+<body>
+    <h1>10 novembre exemple 5</h1>
+    
+</body>
+</html>

@@ -8,35 +8,21 @@
 			*************EXERCICE*************
 			**********************************
 				Réalisez le programme (algorithme) suivant :
-				Quand l'utilisateur sur le premier paragraphe, affichez une B.d.D avec champ de saisie à l'utilisateur.
+				Quand l'utilisateur clique sur le premier paragraphe, affichez une B.d.D avec champ de saisie à l'utilisateur.
 				L'utilisateur doit impérativement saisir une chaîne de caractère. Cette chaîne de caractère est ensuite utilisée pour ouvrir une nouvelle fenêtre à l'aide de la fonction open.
 			*/
-
-			var declencheur = function() {
-				var motUtilisateur = null;
-				while (motUtilisateur == null || motUtilisateur =='') {
-					motUtilisateur = prompt('Veuillez saisir le mot google');
-					
+			var demandeSite = function() {
+				var adresse = null;
+				while (adresse == null || adresse == '') {
+					adresse = prompt(`Donnez l'adresse d'un site`);
 				}
-				
-				while(motUtilisateur) {
-					open('https://www.google.com/', 'Google', 'directories=yes');
-					motUtilisateur = null;
-				}
-
-
+				open(adresse,adresse,'directories=no,menubar=no')
 			};
-
-
-
-
-
-
 		</script>
 	</head>
 	<body>
 		<h1>Mon nouveau document</h1>
-		<p onclick="declencheur()">Premier paragraphe</p>
+		<p onclick="demandeSite();">Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>
 		<noscript>
 			<p>Veuillez activer JavaScript</p>

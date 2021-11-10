@@ -16,34 +16,27 @@
 
 				En bref, il s'agit de créer une boucle qui OBLIGE l'utilisateur à ouvrir une nouvelle fenêtre vers google ou un site alternatif de son choix.
 			*/
-
-			var forceLaMain = function() {
-
-				var allerGoogle = confirm('Voulez-vous ouvrir Google ?')
-				
-				
-					if (allerGoogle) {
-						open('https://www.google.fr/', 'Google', 'directories=yes');
-						allerGoogle = false;
+			var demandeSite = function() {
+				var visite = null;
+				while (visite == null || visite == '') {
+					visite = confirm('Voulez-vous visiter le site Google.fr ?');
+					if (visite) {
+						open('https://www.google.fr','Google');
 					} else {
-						var autreLien = prompt('Veuillez saisir l\'url d\'un site 	alternatif')
-						if (autreLien) {
-							open(autreLien, 'lien alternatif', 'directories=no')
-						} else {
+						visite = prompt('Veuillez saisir l\'url d\'un site alternatif');
+						if (visite == '' || visite == null) {
 							alert('Tant pis !');
-							forceLaMain();
+						} else {
+							open(visite,visite);
 						}
 					}
-				
-			};
-
-
-
+				}
+			}
 		</script>
 	</head>
 	<body>
 		<h1>Mon nouveau document</h1>
-		<p onclick="forceLaMain()">Premier paragraphe</p>
+		<p onclick="demandeSite();">Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>
 		<noscript>
 			<p>Veuillez activer JavaScript</p>
