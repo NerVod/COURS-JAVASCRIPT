@@ -30,16 +30,26 @@
 			** 1 **
 				Reprenez le code de l'exercice précédent au point 1 en utilisant une boucle for au lieu d'un while.
 			*/
+			var compteur = function() {
+				for(i=0; i<3; i++) {
+					alert(i);
+				}
+			};
 			
 			/*
 			** 2 **
 				Reprenez le code de l'exercice précédent au point 2 en utilisant une boucle for au lieu d'un while.
 			*/
-			
+			let tableau = ['Mon premier', 'Mon second', 'Mon troisème']
+			const assemble = function() {
+				for(i=0; i < tableau.length; i++){
+					alert(tableau[i]);
+				}
+			};
 
 		</script>
 	</head>
-	<body>
+	<body onload="compteur(); assemble();">
 		<h1>Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>

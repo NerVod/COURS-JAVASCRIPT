@@ -43,6 +43,14 @@
 				
 				Utilisez la boucle while avec un compteur ainsi que la fonction alert().
 			*/
+			var compteur = function() {
+				var indice = 0;
+				while(indice < 3) {
+					alert(indice);
+					indice++;
+				}
+			};
+
 			
 			/*
 			** 2 **
@@ -51,9 +59,18 @@
 				
 				Utilisez la boucle while avec un compteur ainsi que la fonction alert().
 			*/
+			let tableau = ['Mon premier', 'Mon second', 'Mon troisème']
+			const assemble = function() {
+				let i = 0;
+				while(i < tableau.length){
+					alert(tableau[i]);
+					i++
+				}
+			};
+
 		</script>
 	</head>
-	<body>
+	<body onload="compteur(); assemble()">
 		<h1>Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>
