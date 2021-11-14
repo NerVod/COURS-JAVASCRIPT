@@ -16,9 +16,27 @@
 				_ La fonction prend en argument le message qui s'affichera à l'utilisateur lors de la saisie. 
 				_ La fonction retourne le nombre saisi par l'utilisateur. 
 			*/
+
+			var demandeNombre = function(messageDemandeUtilisateur) {
+				var reponse = NaN;
+				while(isNaN(reponse) || reponse == null) {
+					reponse = prompt(messageDemandeUtilisateur);
+					reponse = parseFloat(reponse);
+				}
+				return(reponse);
+			};
+
+			var demandeDeuxNombres = function () {
+				var nombre1 = demandeNombre('Saisir un premier nombre');
+				var nombre2 = demandeNombre('Saisir un second nombre');
+				var somme = nombre1 + nombre2;
+				alert(somme);
+			}
+
+
 		</script>
 	</head>
-	<body>
+	<body onload="demandeDeuxNombres()">
 		<h1>Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>

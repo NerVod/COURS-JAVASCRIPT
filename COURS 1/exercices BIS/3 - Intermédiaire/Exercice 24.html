@@ -13,12 +13,28 @@
 
 				Utilisez l'attribut d'événement onclick, la fonction prompt(), la fonction alert(), la fonction parseFloat(), la fonction isNaN() et des boucles while.
 			*/
+			var saisieDouble = function() {
+				var nombre1 = NaN;
+				while(isNaN(nombre1) || nombre1 == '') {
+					nombre1 = prompt('Veuillez saisir un premier nombre');
+					nombre1 = parseFloat(nombre1);
+				};
+				var nombre2 = NaN;
+				while(isNaN(nombre2) || nombre2 == '') {
+					nombre2 = prompt('Veuillez saisir un second nombre');
+					nombre2 = parseFloat(nombre2);
+				};
+
+				var somme = nombre1 + nombre2;
+				alert(somme);
+			};
+
 		</script>
 	</head>
 	<body>
 		<h1>Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
-		<p>Deuxième paragraphe</p>
+		<p onclick="saisieDouble()">Deuxième paragraphe</p>
 		<noscript>
 			<p>Veuillez activer JavaScript</p>
 		</noscript>

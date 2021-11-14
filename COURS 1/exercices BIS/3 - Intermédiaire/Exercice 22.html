@@ -30,6 +30,12 @@
 				
 				
 			*/
+			var saisieNombre = function() {
+				var nombre = prompt('Saisir un nombre'); {
+					nombre = parseFloat(nombre);
+				}
+				alert(nombre)
+			};
 			
 			/*
 			** 2 **
@@ -41,7 +47,14 @@
 
 				Utilisez l'attribut d'événement onload(), la fonction prompt(), la fonction alert(), la fonction parseFloat() et la fonction isNaN().
 			*/
-			
+			var saisieNombreVerif = function() {
+				var nombreVerif = prompt('Saisir un nombre');
+					nombreVerif = parseFloat(nombreVerif);
+					nombreVerif = isNaN(nombreVerif);
+					alert(nombreVerif)
+			};
+
+
 			/*	
 			** 3 **
 				Réalisez le programme (algorithme) suivant :
@@ -51,11 +64,22 @@
 
 				Utilisez l'attribut d'événement onclick, la fonction prompt(), la fonction alert(), la fonction parseFloat(), la fonction isNaN() et un bloc conditionnel if/else.			
 			*/
+			var demandeNombre = function(){
+				var saisie = prompt('Saisir un nombre');
+				saisie = parseFloat(saisie);
+				if (isNaN(saisie)){
+					alert('Vous devez-saisir un nombre');
+				} else {
+					alert('Merci d\'avoir saisi un nombre');
+				}
+			};
+
+
 		</script>
 	</head>
-	<body>
+	<body onload="saisieNombre(); saisieNombreVerif();">
 		<h1>Mon nouveau document</h1>
-		<p>Premier paragraphe</p>
+		<p onclick="demandeNombre()">Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>
 		<noscript>
 			<p>Veuillez activer JavaScript</p>

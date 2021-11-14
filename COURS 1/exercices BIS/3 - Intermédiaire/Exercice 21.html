@@ -20,12 +20,28 @@
 
 				Utilisez l'attribut d'événement onclick, la fonction prompt(), la fonction alert() et la boucle while.
 			*/
+			const saisie = function() {
+				let saisieUtilisateur = prompt('saisie 1'); {
+					while(saisieUtilisateur == null || saisieUtilisateur == '' ){
+						saisieUtilisateur= prompt('saisie 1 bis');
+					}
+				}
+				let saisieUtilisateur2 = prompt('saisie 2'); {
+					while(saisieUtilisateur2 == null || saisieUtilisateur2 == ''){
+						saisieUtilisateur2 = prompt('saisie 2 bis');
+					}
+				}
+				let assemblage = saisieUtilisateur + saisieUtilisateur2
+				alert(assemblage)
+
+			}
+
 		</script>
 	</head>
 	<body>
 		<h1>Mon nouveau document</h1>
-		<p>Premier paragraphe</p>
-		<p>Deuxième paragraphe</p>
+		<p onclick="saisie()">Premier paragraphe</p>
+		<p onclick="saisie()">Deuxième paragraphe</p>
 		<noscript>
 			<p>Veuillez activer JavaScript</p>
 		</noscript>
