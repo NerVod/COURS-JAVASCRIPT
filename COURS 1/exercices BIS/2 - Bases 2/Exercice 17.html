@@ -14,9 +14,20 @@
 				_ Sinon (si l'utilisateur n'a pas cliqué sur Annulé ET n'a pas rien saisi), j'affiche la saisie de l'utilisateur dans une B.d.D.
 
 			*/
+			const saisieUtilisateur = function() {
+				let message = prompt('Saisir un message');
+				if(message == null) {
+					alert('Vous avez annulé la saisie');
+				} else if (message == '') {
+					alert('Vous n\'avez rien saisi');
+				} else {
+					alert(message);
+				}
+			};
+
 		</script>
 	</head>
-	<body>
+	<body onload="saisieUtilisateur()">
 		<h1>Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>

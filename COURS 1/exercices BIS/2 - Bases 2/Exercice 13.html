@@ -19,7 +19,10 @@
 
 				Utilisez la fonction confirm()
 			*/
-			
+			let auClick = function() {
+				confirm('Ceci est un choix');
+			};
+
 			
 			/*			
 			** 2 **
@@ -28,7 +31,10 @@
 				
 				Utilisez la fonction confirm() puis  la fonction alert().
 			*/
-			
+			let auClickRetour = function() {
+				let retour = confirm('Ceci est un choix');
+				alert(retour);
+			};
 			
 			/*
 				Quelle information nous retourne la fonction confirm() si l'utilisateur clique sur le choix OK ? Sur Annuler ?
@@ -41,13 +47,19 @@
 
 				Utilisez l'attribut d'événement onload, la fonction confirm(), la fonction alert() et un bloc conditionnel if.
 			*/
+			const continuer = function() {
+				let reponse = confirm('Voulez-vous continuer ?');
+				if (reponse == true){
+					alert('Vous avez cliqué sur ok')
+				}
+			}; 
 
 		</script>
 	</head>
-	<body>
+	<body onload="continuer()">
 		<h1>Mon nouveau document</h1>
-		<p>Premier paragraphe</p>
-		<p>Deuxième paragraphe</p>
+		<p onclick="auClick()">Premier paragraphe</p>
+		<p onclick="auClickRetour()">Deuxième paragraphe</p>
 		<noscript>
 			<p>Veuillez activer JavaScript</p>
 		</noscript>

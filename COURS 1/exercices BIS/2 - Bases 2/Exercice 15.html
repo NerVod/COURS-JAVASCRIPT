@@ -26,9 +26,17 @@
 
 				Utilisez l'attribut d'événement onload, la fonction confirm() et une boucle while.
 			*/
+				const validation = function() {
+					let accord = confirm('Voulez-vous continuer ?');
+					while (accord == true) {
+						accord = confirm('Voulez-vous continuer');
+					}
+				};
+
+
 		</script>
 	</head>
-	<body>
+	<body onload="validation()">
 		<h1>Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>

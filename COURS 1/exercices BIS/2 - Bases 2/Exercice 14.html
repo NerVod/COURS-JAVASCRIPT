@@ -13,6 +13,14 @@
 
 				Utilisez l'attribut d'événement onload, la fonction confirm(), la fonction alert() et un bloc conditionnel if/else.
 			*/
+			const confirmation = function() {
+				let retour = confirm('Voulez-vous continuer ?');
+				if(retour == true) {
+					alert('Vous avez cliqué sur ok');
+				} else {
+					alert('Vous avez choisi d\'annuler');
+				}
+			};
 				
 			/*
 			** 2 **
@@ -22,6 +30,14 @@
 
 				Utilisez l'attribut d'événement onclick, la fonction confirm(),la fonction alert() et un bloc conditionnel if/else
 			*/
+			const continuer = function() {
+				let validation = confirm('Voulez-vous continuer ?');
+				if (validation == true) {
+					alert('Vous avez cliqué sur ok');
+				} else {
+					alert('Vous avez choisi d\'annuler');
+				}
+			};
 				
 			/*
 			** 3 **
@@ -31,11 +47,21 @@
 				
 				Utilisez l'attribut d'événement onmouseover, la fonction confirm(), la fonction alert() et un bloc conditionnel if/else.
 			*/
+			const accord = function() {
+				let choix = confirm ('Voulez-vous continuer ?');
+				if (choix == true) {
+					alert('Vous avez cliqué sur ok');
+				} else {
+					alert('Vous avez choisi d\'annuler');
+				}
+			};
+
+
 		</script>
 	</head>
-	<body>
-		<h1>Mon nouveau document</h1>
-		<p>Premier paragraphe</p>
+	<body onload="confirmation()">
+		<h1 onmouseover="accord()">Mon nouveau document</h1>
+		<p onclick="continuer()">Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>
 		<noscript>
 			<p>Veuillez activer JavaScript</p>
