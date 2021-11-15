@@ -13,9 +13,22 @@
 				
 				Il n'est pas nécessaire pour la seconde boucle for d'utiliser, par exemple, i < 4 comme limite pour la boucle. Regardez l'indication de l'Exercice 27bis pour trouver la solution.
 			*/
+
+			const demandeTableau = function() {
+				let tableau = [];
+				for (let i=0; i<4; i++){
+					tableau[i] = '';
+					while (tableau[i] == '' || tableau[i]== null){
+						tableau[i] = prompt('Veuillez saisir le texte '+ (i+1));
+					}
+				}
+				for (let indice = 0; tableau[indice] ;indice++){
+					alert(tableau[indice]);
+				}
+			};
 		</script>
 	</head>
-	<body>
+	<body onload="demandeTableau()">
 		<h1>Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>

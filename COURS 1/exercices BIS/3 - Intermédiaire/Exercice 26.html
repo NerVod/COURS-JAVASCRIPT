@@ -17,9 +17,22 @@
 				Utilisez l'attribut d'événement onload, la fonction prompt(), une boucle for, une boucle while et la fonction alert().
 				
 			*/
+
+			const demandeTableau = function() {
+				let tableau = [];
+				for (let i=0; i<4; i++){
+					tableau[i] = '';
+					while (tableau[i] == '' || tableau[i]== null){
+						tableau[i] = prompt('Veuillez saisir le texte '+ (i+1));
+					}
+				}
+				alert(tableau);
+			};
+
+
 		</script>
 	</head>
-	<body>
+	<body onload="demandeTableau()">
 		<h1>Mon nouveau document</h1>
 		<p>Premier paragraphe</p>
 		<p>Deuxième paragraphe</p>
